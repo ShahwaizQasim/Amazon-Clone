@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+                         /* navbar */
+.first-nav{
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+                        /* box1 */
+.nav-logo{
+    height: 40px;
+    width: 120px;
+    background-image: url(./images/amazon_logo.png);
+    background-size: cover;
+    background-position: center;
+}
+.nav-logo:hover{
+    border: 1px solid white;
+    cursor: pointer;
+} 
+                      /* box2 */
+.nav-address{
+    height: 40px;
+    width: auto;
+    text-align: center;
+}
+.nav-text{
+   font-size: 12px;
+   color: #ccc;
+   font-weight: 600;
+}
+.add-icon{
+    display: flex;
+    gap: 5px;
+    color: white;
+    position: relative;
+    justify-content: center;
+    bottom: 20px;
+}
+
+.nav-address:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+                         /* box3 */
+.nav-search{
+    height: auto;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 4px;
+}
+.nav-dropdown{
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color:#ccc;
+    outline: none;
+    font-size: 14px;
+}
+.nav-input{
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    outline: none;
+}
+.input-icon{
+    height: 40px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEBD69;
+    color: black;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.nav-search:focus-within{
+    border: 2px solid #FF9900;
+}
+/* box4 */
+.nav-dropdown1{
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    background-color:#131921;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.nav-dropdown1:hover{
+    border: 1px solid white;
+    cursor: pointer;
+}
+/* box5 */
+.nav-sign{
+    height: 40px;
+    width: auto;
+    padding: 5px;
+    cursor: pointer;
+}
+.nav-sign >p{
+    font-size: 12px;
+}
+.nav-sign > h5{
+    position: relative;
+    bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-sign:hover{
+    border: 1px solid white;
+}
+/* box6 */
+.nav-sign1{
+    height: 40px;
+    width: 80px;
+    padding: 5px;
+    cursor: pointer;
+}
+.nav-sign1 >p{
+    font-size: 12px;
+}
+.nav-sign1 > h5{
+    position: relative;
+    bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.nav-sign1:hover{
+    border: 1px solid white;
+}
+/* box7 */
+.nav-cart{
+    height: 40px;
+    width: 80px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.nav-cart > p {
+    position: relative;
+    top: 10px;
+}
+.nav-icon1{
+    font-size: 25px;
+}
+.nav-cart:hover{
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+/* second-nav */
+.second-nav{
+    height: 40px;
+    background-color: #232F3E;
+    color: white;  
+    display: flex; 
+   
+}
+.second-nav1{
+    height: 40px;
+    background-color: #232F3E;
+    color: white;
+    margin-left: 20px;
+    display: flex;
+   
+}
+.second-nav1 > ul{
+    display: flex;
+    gap:20px;
+}
+.second-nav1 > ul > li{
+    list-style-type: none;
+    padding-block: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* section2 content */
+.section2{
+    height: auto;
+    background-color: #D4CFE3;
+}
+.content-row{
+    position: relative;
+}
+.content-box{
+    height: auto;
+    position: absolute;
+    bottom: 180px;
+}
+.box-distance{
+    height:400px;
+    width: 99%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.box-distance>h5{
+    padding: 15px;
+    font-weight: 700;
+}
+.img1{
+    height: 120px;
+    width: 100px;
+    position: relative;
+    left: 10px;
+    overflow: hidden;
+}
+.img1 > p{
+    padding: 10px;
+    font-size: 12px;
+}
+.box-distance > a{
+    font-size: 14px;
+    padding: 5px;
+}
+.box-img{
+    height: 250px;
+    width: 95%;
+    position: relative;
+    left: 5px;
+
+}
