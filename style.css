@@ -194,7 +194,7 @@
 /* section2 content */
 .section2{
     height: auto;
-    background-color: rgba(234, 239, 241,0.6);
+    background-color: rgb(234, 239, 241);
 }
 .content-row{
     position: relative;
@@ -202,7 +202,8 @@
 .content-box{
     height: auto;
     position: absolute;
-    bottom: 300px;
+    bottom: 200px;
+    margin: auto;
 }
 .box-distance{
     height:400px;
@@ -239,7 +240,27 @@
     left: 5px;
 
 }
+
+/* seller-products */
+
+.box-distance1{
+    height:auto;
+    width: 99%;
+    background-color: white;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.box-distance1 > h4{
+    padding: 20px;
+    font-weight: 600;
+}
+.box-distance1 > a > img{
+    height: 150px;
+    padding: 10px 0px 10px 40px;
+}
+
 /* footer */
+
 .footer-containerfluid1{
     min-height: 60px;
     background-color: var(--color2);
