@@ -10,7 +10,8 @@
 }
                          /* navbar */
 .first-nav{
-    height: 60px;
+    min-height: 60px;
+    max-height: 80px;
     background-color: var(--color1);
     color: white;
     display: flex;
@@ -32,7 +33,7 @@
                       /* box2 */
 .nav-address{
     height: 40px;
-    width: auto;
+    min-width: 100px;
     text-align: center;
 }
 .nav-text{
@@ -110,7 +111,7 @@
 /* box5 */
 .nav-sign{
     height: 40px;
-    width: auto;
+    min-width: 120px;
     padding: 5px;
     cursor: pointer;
 }
@@ -129,7 +130,7 @@
 /* box6 */
 .nav-sign1{
     height: 40px;
-    width: 80px;
+    min-width: 80px;
     padding: 5px;
     cursor: pointer;
 }
@@ -166,19 +167,20 @@
 }
 
 /* second-nav */
+
 .second-nav{
-    height: 40px;
+    min-height: 40px;
     background-color: var(--color2);
     color: white;  
     display: flex; 
+    padding: 0px 0px 0px 10px;
    
 }
 .second-nav1{
-    height: 40px;
+    min-height: 40px;
     background-color: #232F3E;
     color: white;
-    margin-left: 20px;
-    display: flex;
+    /* display: flex; */
    
 }
 .second-nav1 > ul{
@@ -187,7 +189,7 @@
 }
 .second-nav1 > ul > li{
     list-style-type: none;
-    padding-block: 8px;
+    padding-top: 8px;
     font-size: 14px;
     font-weight: 600;
 }
@@ -209,29 +211,35 @@
     height:400px;
     width: 99%;
     background-color: white;
+    gap: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.images{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 .box-distance>h5{
     padding: 15px;
     font-weight: 700;
 }
 .img1{
-    height: 120px;
-    width: 100px;
+    height: 100px;
+    width: 45%;
     position: relative;
-    left: 10px;
+    left: 5px;
     overflow: hidden;
 }
 .img1 > p{
     padding: 10px;
     font-size: 12px;
 }
-.box-distance > a{
+.box-distance > a {
     font-size: 14px;
-    padding: 5px;
+    padding: 10px;
 }
 .box-img{
     height: 250px;
@@ -255,8 +263,8 @@
     font-weight: 600;
 }
 .box-distance1 > a > img{
-    height: 150px;
-    padding: 10px 0px 10px 40px;
+    max-height: 170px;
+    padding: 10px 0px 30px 40px;
 }
 
 /* footer */
@@ -298,6 +306,9 @@
     padding: 10px;
 }
 /* footer bottom */
+.bottom{
+    height: auto;
+}
 .footer-line{
     height: 1px;
     background-color: #666;
@@ -313,18 +324,16 @@
 }
 .footer-bottom > img{
     height: 70px;
-    padding-right: 30px;
     padding-top: 5px;
 }
 .english-footer{
     height: 40px;
-    width: 120px;
+    min-width: 120;
     border: 1px solid #666;
-    margin-left: 30px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
-    padding: 8px;
+    padding: 10px;
     border-radius: 4px;
     gap: 5px;
     color: #ccc;
@@ -338,9 +347,8 @@
 }
 .dollar-footer{
     height: 40px;
-    width: 180px;
+    width: auto;
     border: 1px solid #666;
-    margin-left: 10px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -359,9 +367,8 @@
 }
 .unitedstate-footer{
     height: 40px;
-    width: 120px;
+    min-width: 120px;
     border: 1px solid #666;
-    margin-left: 10px;
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -377,4 +384,53 @@
 .unitedstate-footer >h6{
     font-size: 14px;
     padding-top: 2px;
+}
+
+@media screen and (max-width:1024px){
+    .nav-sign >p{
+        font-size: 10px;
+    }
+    .nav-sign > h5{
+        font-size: 12px;
+    }
+    .nav-sign1 >p{
+        font-size: 10px;
+    }
+    .nav-sign1 > h5{
+        font-size: 12px;
+    }
+    .hidden-in-mobile1{
+        display: none;
+    }
+}
+
+@media screen and (max-width:720px){
+    .hidden-in-mobile{
+        display: none;
+    }
+    .nav-search{
+       width: 60%;
+    }
+    .second-nav{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:510px){
+    .second-nav{
+        justify-content: center;
+    }
+    .second-nav1 > ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+    .second-nav1 > ul > li{
+        list-style-type: none;
+        padding-block: 8px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .box-distance>h5{
+        display: block;
+    }
 }
